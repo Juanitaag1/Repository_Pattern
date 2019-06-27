@@ -1,5 +1,5 @@
 //
-//  Copyright © 2015 Big Nerd Ranch
+//  Lesson: Repository Pattern and AppDelegate
 //
 
 import Foundation
@@ -21,21 +21,17 @@ struct Item {
             let adjectives = ["Fluffy", "Rusty", "Shiny", "Silver", "Gold"]
             let nouns = ["Bear", "Spork", "Mac", "Bow", "Airplane"]
             
-            var idx = arc4random_uniform(UInt32(adjectives.count))
-            let randomAdjective = adjectives[Int(idx)]
+            let randomAdjective = adjectives.randomElement()
+            let randomNoun = nouns.randomElement()
             
-            idx = arc4random_uniform(UInt32(nouns.count))
-            let randomNoun = nouns[Int(idx)]
-            
-            name = "\(randomAdjective) \(randomNoun)"
-            valueInDollars = Int(arc4random_uniform(100))
-            serialNumber =
-            UUID().uuidString.components(separatedBy: "-").first!
-        } else {
+            name = "\(randomAdjective!) \(randomNoun!)"
+            valueInDollars = Int.random(in:1...100)
+            serialNumber = UUID().uuidString.components(separatedBy: "-").first!
+        }
+        else {
             name = ""
             serialNumber = nil
             valueInDollars = 0
-            
         }
     }
     

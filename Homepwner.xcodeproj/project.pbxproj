@@ -11,8 +11,6 @@
 		6B64C0F81B84C7C300288BE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B64C0F61B84C7C300288BE3 /* Main.storyboard */; };
 		6B64C0FA1B84C7C300288BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B64C0F91B84C7C300288BE3 /* Assets.xcassets */; };
 		6B64C0FD1B84C7C300288BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B64C0FB1B84C7C300288BE3 /* LaunchScreen.storyboard */; };
-		6B64C1081B84C7C300288BE3 /* HomepwnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64C1071B84C7C300288BE3 /* HomepwnerTests.swift */; };
-		6B64C1131B84C7C300288BE3 /* HomepwnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64C1121B84C7C300288BE3 /* HomepwnerUITests.swift */; };
 		6B64C1211B84C8EB00288BE3 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64C1201B84C8EB00288BE3 /* ItemsViewController.swift */; };
 		6B64C1231B84C9C900288BE3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64C1221B84C9C900288BE3 /* Item.swift */; };
 		6B64C1251B84CB3F00288BE3 /* RandomItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64C1241B84CB3F00288BE3 /* RandomItemStore.swift */; };
@@ -43,11 +41,7 @@
 		6B64C0FC1B84C7C300288BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B64C0FE1B84C7C300288BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B64C1031B84C7C300288BE3 /* HomepwnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomepwnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B64C1071B84C7C300288BE3 /* HomepwnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepwnerTests.swift; sourceTree = "<group>"; };
-		6B64C1091B84C7C300288BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B64C10E1B84C7C300288BE3 /* HomepwnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomepwnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B64C1121B84C7C300288BE3 /* HomepwnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepwnerUITests.swift; sourceTree = "<group>"; };
-		6B64C1141B84C7C300288BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B64C1201B84C8EB00288BE3 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		6B64C1221B84C9C900288BE3 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6B64C1241B84CB3F00288BE3 /* RandomItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomItemStore.swift; sourceTree = "<group>"; };
@@ -82,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				6B64C0F11B84C7C300288BE3 /* Homepwner */,
-				6B64C1061B84C7C300288BE3 /* HomepwnerTests */,
-				6B64C1111B84C7C300288BE3 /* HomepwnerUITests */,
 				6B64C0F01B84C7C300288BE3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,24 +102,6 @@
 				D1DC23932278F03F00754B48 /* Models */,
 			);
 			path = Homepwner;
-			sourceTree = "<group>";
-		};
-		6B64C1061B84C7C300288BE3 /* HomepwnerTests */ = {
-			isa = PBXGroup;
-			children = (
-				6B64C1071B84C7C300288BE3 /* HomepwnerTests.swift */,
-				6B64C1091B84C7C300288BE3 /* Info.plist */,
-			);
-			path = HomepwnerTests;
-			sourceTree = "<group>";
-		};
-		6B64C1111B84C7C300288BE3 /* HomepwnerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6B64C1121B84C7C300288BE3 /* HomepwnerUITests.swift */,
-				6B64C1141B84C7C300288BE3 /* Info.plist */,
-			);
-			path = HomepwnerUITests;
 			sourceTree = "<group>";
 		};
 		D1DC23932278F03F00754B48 /* Models */ = {
@@ -283,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B64C1081B84C7C300288BE3 /* HomepwnerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B64C1131B84C7C300288BE3 /* HomepwnerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
